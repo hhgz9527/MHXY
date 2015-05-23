@@ -7,34 +7,62 @@
 //
 
 import SpriteKit
+import SwiftyJSON
 
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        
-        self.addChild(myLabel)
+  var player: Player?
+  
+  override init() {
+    super.init()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
+  
+  override func didMoveToView(view: SKView) {
+    var playerData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("Butterfly", ofType: "json")!)
+    
+    // background
+    let background = SKSpriteNode(imageNamed: "MAPEastSea")
+    background.position = CGPointMake(400, 400)
+    addChild(background)
+    
+    // player
+    if let jsonData = playerData {
+      self.player = PlayerImpl(json: JSON(data: jsonData))
+      self.player?.animation = PlayerAnimationImpl(json: JSON(data: jsonData))
+      (self.player as! SKSpriteNode).position = CGPointMake(300, 300)
+      self.addChild(self.player as! SKSpriteNode)
+      self.player?.idle()
+    }
+  }
+  
+  override func mouseDown(theEvent: NSEvent) {
+    let mouseLocation = theEvent.locationInNode(self)
+    let direction = Direction.directionFrom(mouseLocation, toOirgin: (self.player as! SKSpriteNode).position)
+    
+    if (direction == .UP) {
+      self.player?.walkUp()
     }
     
-    override func mouseDown(theEvent: NSEvent) {
-        /* Called when a mouse click occurs */
-        
-        let location = theEvent.locationInNode(self)
-        
-        let sprite = SKSpriteNode(imageNamed:"Spaceship")
-        sprite.position = location;
-        sprite.setScale(0.5)
-        
-        let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-        sprite.runAction(SKAction.repeatActionForever(action))
-        
-        self.addChild(sprite)
+    if (direction == .LEFT) {
+      self.player?.walkLeft()
     }
     
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+    if (direction == .RIGHT) {
+      self.player?.walkRight()
     }
+    
+    if (direction == .DOWN) {
+      self.player?.walkDown()
+    }
+    
+    (self.player as! SKSpriteNode).runAction(SKAction.moveTo(mouseLocation, duration: (self.player as! SKSpriteNode).position.moveTimeTo(mouseLocation)))
+  }
+  
+  
+  
+  override func update(currentTime: CFTimeInterval) {
+  }
 }

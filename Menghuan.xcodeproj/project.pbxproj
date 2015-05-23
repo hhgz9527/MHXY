@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2652488C6F783BD1167D55 /* Pods_Menghuan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5151EE5E64B50B825223D0C /* Pods_Menghuan.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		743EE1031B0F2EEF00E4B619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1021B0F2EEF00E4B619 /* AppDelegate.swift */; };
 		743EE1051B0F2EEF00E4B619 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1041B0F2EEF00E4B619 /* GameScene.swift */; };
 		743EE1071B0F2EEF00E4B619 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 743EE1061B0F2EEF00E4B619 /* GameScene.sks */; };
 		743EE1091B0F2EEF00E4B619 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743EE1081B0F2EEF00E4B619 /* Images.xcassets */; };
 		743EE10C1B0F2EEF00E4B619 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743EE10A1B0F2EEF00E4B619 /* MainMenu.xib */; };
 		743EE1181B0F2EEF00E4B619 /* MenghuanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1171B0F2EEF00E4B619 /* MenghuanTests.swift */; };
+		743EE12A1B10CAB500E4B619 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1291B10CAB500E4B619 /* Player.swift */; };
+		743EE12C1B10CC8000E4B619 /* PlayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE12B1B10CC8000E4B619 /* PlayerAnimation.swift */; };
+		743EE12E1B10D56100E4B619 /* Butterfly.json in Resources */ = {isa = PBXBuildFile; fileRef = 743EE12D1B10D56100E4B619 /* Butterfly.json */; };
+		743EE1301B10D84700E4B619 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743EE12F1B10D84700E4B619 /* SwiftyJSON.framework */; };
+		743EE1331B10ECF900E4B619 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1321B10ECF900E4B619 /* CGPoint+Extension.swift */; };
+		743EE1351B10EF6700E4B619 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EE1341B10EF6700E4B619 /* Direction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40213FE84AE9C9D5D8409F5A /* Pods-Menghuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menghuan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Menghuan/Pods-Menghuan.debug.xcconfig"; sourceTree = "<group>"; };
+		5A2BB1166E9B80652B351A04 /* Pods-Menghuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menghuan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Menghuan/Pods-Menghuan.release.xcconfig"; sourceTree = "<group>"; };
 		743EE0FD1B0F2EEF00E4B619 /* Menghuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menghuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743EE1011B0F2EEF00E4B619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743EE1021B0F2EEF00E4B619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +45,13 @@
 		743EE1111B0F2EEF00E4B619 /* MenghuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenghuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		743EE1161B0F2EEF00E4B619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743EE1171B0F2EEF00E4B619 /* MenghuanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenghuanTests.swift; sourceTree = "<group>"; };
+		743EE1291B10CAB500E4B619 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		743EE12B1B10CC8000E4B619 /* PlayerAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerAnimation.swift; sourceTree = "<group>"; };
+		743EE12D1B10D56100E4B619 /* Butterfly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Butterfly.json; sourceTree = "<group>"; };
+		743EE12F1B10D84700E4B619 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug/Pods-Menghuan/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		743EE1321B10ECF900E4B619 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		743EE1341B10EF6700E4B619 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		D5151EE5E64B50B825223D0C /* Pods_Menghuan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Menghuan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743EE1301B10D84700E4B619 /* SwiftyJSON.framework in Frameworks */,
+				6B2652488C6F783BD1167D55 /* Pods_Menghuan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,8 @@
 				743EE0FF1B0F2EEF00E4B619 /* Menghuan */,
 				743EE1141B0F2EEF00E4B619 /* MenghuanTests */,
 				743EE0FE1B0F2EEF00E4B619 /* Products */,
+				E8F09A9C61FCFC947EE2B52A /* Pods */,
+				B86C912161E32ECB41D58C77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +97,16 @@
 		743EE0FF1B0F2EEF00E4B619 /* Menghuan */ = {
 			isa = PBXGroup;
 			children = (
+				743EE1291B10CAB500E4B619 /* Player.swift */,
+				743EE12B1B10CC8000E4B619 /* PlayerAnimation.swift */,
 				743EE1021B0F2EEF00E4B619 /* AppDelegate.swift */,
 				743EE1041B0F2EEF00E4B619 /* GameScene.swift */,
 				743EE1061B0F2EEF00E4B619 /* GameScene.sks */,
+				743EE1311B10ECD400E4B619 /* Util */,
 				743EE1081B0F2EEF00E4B619 /* Images.xcassets */,
 				743EE10A1B0F2EEF00E4B619 /* MainMenu.xib */,
 				743EE1001B0F2EEF00E4B619 /* Supporting Files */,
+				743EE12D1B10D56100E4B619 /* Butterfly.json */,
 			);
 			path = Menghuan;
 			sourceTree = "<group>";
@@ -112,6 +136,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		743EE1311B10ECD400E4B619 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				743EE1321B10ECF900E4B619 /* CGPoint+Extension.swift */,
+				743EE1341B10EF6700E4B619 /* Direction.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B86C912161E32ECB41D58C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				743EE12F1B10D84700E4B619 /* SwiftyJSON.framework */,
+				D5151EE5E64B50B825223D0C /* Pods_Menghuan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F09A9C61FCFC947EE2B52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40213FE84AE9C9D5D8409F5A /* Pods-Menghuan.debug.xcconfig */,
+				5A2BB1166E9B80652B351A04 /* Pods-Menghuan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 743EE11B1B0F2EEF00E4B619 /* Build configuration list for PBXNativeTarget "Menghuan" */;
 			buildPhases = (
+				2D7F1CF9B273F0F16ACEA73E /* Check Pods Manifest.lock */,
 				743EE0F91B0F2EEF00E4B619 /* Sources */,
 				743EE0FA1B0F2EEF00E4B619 /* Frameworks */,
 				743EE0FB1B0F2EEF00E4B619 /* Resources */,
+				BCB0E66D8BDC60AD9A36A7DC /* Embed Pods Frameworks */,
+				7D9F77F0E9783626F34C696A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +249,7 @@
 				743EE1071B0F2EEF00E4B619 /* GameScene.sks in Resources */,
 				743EE1091B0F2EEF00E4B619 /* Images.xcassets in Resources */,
 				743EE10C1B0F2EEF00E4B619 /* MainMenu.xib in Resources */,
+				743EE12E1B10D56100E4B619 /* Butterfly.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +262,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D7F1CF9B273F0F16ACEA73E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D9F77F0E9783626F34C696A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menghuan/Pods-Menghuan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB0E66D8BDC60AD9A36A7DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menghuan/Pods-Menghuan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		743EE0F91B0F2EEF00E4B619 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				743EE1051B0F2EEF00E4B619 /* GameScene.swift in Sources */,
+				743EE12A1B10CAB500E4B619 /* Player.swift in Sources */,
 				743EE1031B0F2EEF00E4B619 /* AppDelegate.swift in Sources */,
+				743EE1331B10ECF900E4B619 /* CGPoint+Extension.swift in Sources */,
+				743EE12C1B10CC8000E4B619 /* PlayerAnimation.swift in Sources */,
+				743EE1351B10EF6700E4B619 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,22 +436,34 @@
 		};
 		743EE11C1B0F2EEF00E4B619 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40213FE84AE9C9D5D8409F5A /* Pods-Menghuan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug/Pods-Menghuan",
+				);
 				INFOPLIST_FILE = Menghuan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		743EE11D1B0F2EEF00E4B619 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2BB1166E9B80652B351A04 /* Pods-Menghuan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug/Pods-Menghuan",
+				);
 				INFOPLIST_FILE = Menghuan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -404,6 +523,7 @@
 				743EE11D1B0F2EEF00E4B619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		743EE11E1B0F2EEF00E4B619 /* Build configuration list for PBXNativeTarget "MenghuanTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +532,7 @@
 				743EE1201B0F2EEF00E4B619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
